@@ -1,0 +1,23 @@
+{
+  "name": "data_structures_js",
+  "version": "1.0.0",
+  "description": "Data structures implemented in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottmacphersonmusic/data_structures_js.git"
+  },
+  "author": "Scott Macpherson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scottmacphersonmusic/data_structures_js/issues"
+  },
+  "homepage": "https://github.com/scottmacphersonmusic/data_structures_js#readme",
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "mocha": "^2.3.3"
+  }
+}
