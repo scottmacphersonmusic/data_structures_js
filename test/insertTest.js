@@ -3,7 +3,7 @@ var LinkedList = load.list;
 var Node = load.node;
 var expect = require('chai').expect;
 
-describe('LinkedList', function() {
+describe('LinkedList#insert', function() {
   it('should insert a node', function() {
     var list = new LinkedList();
     // insert one item
