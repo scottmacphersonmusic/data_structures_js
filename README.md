@@ -38,7 +38,7 @@ Create a **new** doubly linked list:
 
 **Print** a list of all all the values in the list:
 
-`console.log(list.toString());` will return `'1, two, four, 5'`
+`console.log(list.toString());` will return `'5, four, two, 1'`
 
 - *(remember we removed 3)*
 - *calling `toString()` on an empty list will return `null`*
