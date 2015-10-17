@@ -1,6 +1,4 @@
-var load = require('../lib/linkedList');
-var LinkedList = load.list;
-var Node = load.node;
+var LinkedList = require('../lib/linkedList').list;
 var expect = require('chai').expect;
 
 describe('LinkedList#search', function() {
