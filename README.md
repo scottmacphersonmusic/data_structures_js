@@ -6,7 +6,7 @@ data_structures_js is a small Node project that implements classic data structur
 
 ### Structures
 - Doubly Linked List
-- *coming soon: Binary Tree*
+- Binary Search Tree
 
 ### Usage
 ##### Doubly Linked List
@@ -43,9 +43,56 @@ Create a **new** doubly linked list:
 - *(remember we removed 3)*
 - *calling `toString()` on an empty list will return `null`*
 
+##### Binary Search Tree
+`BinSearchTree` takes three arguments: `val`, `left`, and `right`.  If you don't provide `left` or `right` they will default to an instance of `NullBinTree`.
+
+Create a **new** binary search tree:
+
+`bst = new BinSearchTree(7);`
+
+To **insert** a new value:
+
+`bst.insert(4);`
+
+To determine whether the tree **contains** a value:
+
+```javascript
+bst.contains(4);  // => returns true
+```
+
+To calculate the **size** of the tree:
+
+```javascript
+bst.size();  // => returns 2
+```
+
+To calculate the **depth** of the tree:
+
+```javascript
+bst.depth();  // => returns 2
+```
+
+To calculate the total **balance** of the tree:
+
+```javascript
+bst.balance();   // => returns 1
+```
+
+###### Approach
+The `insert` method uses pre-order traversal.
+
+Each method in `BinSearchTree` uses recursive calls to accumulate a return value.
+
+This binary search tree implementation makes use of the *null object pattern* to handle its base-cases.  `NullBinTree` responds to everything a `BinSearchTree` does, but returns either `0`, `false` or `null` depending on the context.
+
+
 ### Contributing
 1. Fork It
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
 5. Create new Pull Request
+
+
+### License
+data_structures_js is released under the [MIT License](http://opensource.org/licenses/MIT)
