@@ -12,17 +12,18 @@ describe('BinSearchTree', function() {
   });
 
   it('should have pre-order traversal', function() {
-    var result = [15,10,7,5,9,13,11,14,20,18,19,24];
+    var result = [15, 10, 7, 5, 9, 13, 11, 14, 20, 18, 19, 24];
     expect(bst.preOrder()).to.eql(result);
   });
 
   it('should have in-order traversal', function() {
-    var result = [5, 7, 9, 10, 11, 13, 14, 18, 19, 20, 24];
+    var result = [5, 7, 9, 10, 11, 13, 14, 15, 18, 19, 20, 24];
     expect(bst.inOrder()).to.eql(result);
   });
 
   it('should have post-order traversal', function() {
-    var result = [5, 9, 7, 11, 14, 13, 10, 19, 18, 24, 20];
+    // console.log(bst.left.left);
+    var result = [5, 9, 7, 11, 14, 13, 10, 19, 18, 24, 20, 15];
     expect(bst.postOrder()).to.eql(result);
   });
 
