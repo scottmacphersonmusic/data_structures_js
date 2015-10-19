@@ -85,6 +85,7 @@ Each method in `BinSearchTree` uses recursive calls to accumulate a return value
 
 This binary search tree implementation makes use of the *null object pattern* to handle its base-cases.  `NullBinTree` responds to everything a `BinSearchTree` does, but returns either `0`, `false` or `null` depending on the context.
 
+There are four methods available for traversing the tree, including each of the depth-first approaches (`preOrder`, `inOrder` and `postOrder`) as well as a breadth-first approach (`breadthFirst`).  The depth-first traversals each use recursion to navigate the tree structure.  The breadth-first traversal builds-up a queue of tree objects encountered in a left-to-right/top-down progression through a tree structure, then shifts the first object off the queue, records the value to a results array and repeats until the queue is empty.
 
 ### Contributing
 1. Fork It
