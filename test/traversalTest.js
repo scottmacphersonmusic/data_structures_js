@@ -22,7 +22,6 @@ describe('BinSearchTree', function() {
   });
 
   it('should have post-order traversal', function() {
-    // console.log(bst.left.left);
     var result = [5, 9, 7, 11, 14, 13, 10, 19, 18, 24, 20, 15];
     expect(bst.postOrder()).to.eql(result);
   });
